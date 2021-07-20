@@ -1,4 +1,4 @@
-# Chatterbox Sinatra React Lab
+# Sinatra React Lab: Chatterbox
 
 ## Learning Goals
 
