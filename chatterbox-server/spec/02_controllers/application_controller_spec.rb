@@ -12,8 +12,8 @@ describe ApplicationController do
       get '/messages'
 
       expect(last_response.body).to include_json([
-        { body: "Hello 👋", username: "Liza", created_at: a_kind_of(Time) },
-        { body: "Hi!", username: "Duane", created_at: a_kind_of(Time) }
+        { body: "Hello 👋", username: "Liza", created_at: message1.created_at.as_json },
+        { body: "Hi!", username: "Duane", created_at: message2.created_at.as_json }
       ])
     end
   end
@@ -32,8 +32,7 @@ describe ApplicationController do
 
       expect(last_response.body).to include_json(
         body: "let's get this chat app working", 
-        username: "Liza",
-        created_at: a_kind_of(Time)
+        username: "Liza"
       )
     end
   end
