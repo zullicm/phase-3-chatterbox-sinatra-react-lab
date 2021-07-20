@@ -125,10 +125,18 @@ next time you see them, you'll know what this means!
 
 Work through the deliverables below. There are tests in the `chatterbox-server`
 folder. Because of this lab's project structure, running `learn test` won't work
-— instead, you'll need to run `rspec` to run the tests for the Sinatra backend.
+— instead, you'll need to run `rspec` (or `bundle exec rspec`) to run the tests
+for the Sinatra backend.
 
 Make sure to try out your routes from the React frontend application as well
-once you have everything set up!
+once you have everything set up! You can run your Sinatra server with:
+
+```sh
+bundle exec rake server
+```
+
+You'll need to change the `fetch` requests to use `http://localhost:9292` for
+their requests as well.
 
 ### Model
 
