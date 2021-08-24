@@ -28,16 +28,16 @@ Let's take a quick tour of what we have so far.
 
 To get started, `cd` into the `chatterbox-client` directory. Then run:
 
-```sh
-npm install
-npm run server
+```console
+$ npm install
+$ npm run server
 ```
 
 This will install the React project dependencies, and run a demo API server
 using `json-server`. Next, run this in a new terminal:
 
-```sh
-npm start
+```console
+$ npm start
 ```
 
 Then visit [http://localhost:3000](http://localhost:3000) in the browser and
@@ -135,8 +135,8 @@ folder. Because of this lab's project structure, running `learn test` won't work
 Make sure to try out your routes from the React frontend application as well
 once you have everything set up. You can run your Sinatra server with:
 
-```sh
-bundle exec rake server
+```console
+$ bundle exec rake server
 ```
 
 You'll need to change the `fetch` requests in React to use
@@ -155,8 +155,8 @@ messages with the following attributes:
 After creating the model and migrations, run the migrations and use the provided
 `seeds.rb` file to seed the database:
 
-```sh
-bundle exec rake db:migrate db:seed
+```console
+$ bundle exec rake db:migrate db:seed
 ```
 
 ### Routes
